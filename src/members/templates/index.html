@@ -1,0 +1,23 @@
+{% extends "master.html" %}
+
+{% block title %}
+List of all members
+{% endblock %}
+
+{% block content %}
+<h1><a href="/">HOME</a></h1>
+<h1>Hello {{ firstname }} , how are you?</h1>
+<h1>Members {{ a }}</h1>
+<ol>
+    {% for x in members %}
+    <li><a href="show/{{ x.id }}">{{ x.lastname }}</a></li>
+    {% endfor %}
+</ol>
+
+{% if greeting == 1 and greeting %}
+    <h1>    Exists</h1>
+{% else %}
+    <h1>Not Exist</h1>
+{% endif %}
+
+{% endblock %}

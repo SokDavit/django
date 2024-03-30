@@ -1,0 +1,15 @@
+{% extends "master.html" %}
+
+{% block title %}
+Member-Display
+{% endblock %}
+
+{% block content %}
+<h1>show</h1>
+    <h1>{{ detail.firstname }} {{ detail.lastname }}</h1>
+  
+    <p>Phone: {{ detail.phone }}</p>
+    <p>Member since: {{ detail.joined_date }}</p>
+    <a href="/members">back</a>
+{% endblock %}
+
